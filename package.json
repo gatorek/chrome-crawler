@@ -7,6 +7,7 @@
     "chrome-launcher": "^0.8.0",
     "chrome-remote-interface": "^0.25.1",
     "command-line-args": "^4.0.7",
+    "kue": "^0.11.6",
     "simplecrawler": "^1.1.5",
     "underscore": "^1.8.3"
   },
