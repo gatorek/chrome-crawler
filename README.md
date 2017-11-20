@@ -11,7 +11,7 @@ Web crawler using Chrome headless mode and chrome remote debug. Loggs all reques
 ### Set up ###
 
 * Download, using `git clone https://bitbucket.org/gatorek/chrome-crawler.git ./` or got to Download section of tihs repo
-* Run `nmp install`, which installs all neccessary node dependencies 
+* Run `npm install`, which installs all neccessary node dependencies 
 
 ### Run ###
 
