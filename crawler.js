@@ -36,7 +36,13 @@ crawler.downloadUnsupported = false
 crawler.on("fetchcomplete", function(queueItem, responseBuffer, response) {
     if (/^text\/html/.test(response.headers['content-type'])) {
         console.log('CRAWL: ' + queueItem.url)
-        queue.create('url', {url: queueItem.url}).removeOnComplete(true).save()
+		try {
+		    queue.create('url', {url: queueItem.url}).removeOnComplete(true).save()
+		}
+		catch (err) {
+			console.error(err); 
+			console.error('ERR QUEUE: ' + queueItem.url )
+		}
     }
 })
 
